@@ -30,13 +30,13 @@ const QiskitFallFest = () => {
         
         {/* Mathematical Formulas */}
         <div 
-          className="absolute top-60 right-1/3 text-cyan-300 font-mono text-lg opacity-30"
+          className="absolute top-60 right-1/3 text-cyan-200 font-mono text-lg opacity-60"
           style={{ transform: `translateX(${scrollY * 0.1}px)` }}
         >
           |ψ⟩ = α|0⟩ + β|1⟩
         </div>
         <div 
-          className="absolute bottom-60 right-10 text-blue-300 font-mono text-sm opacity-30"
+          className="absolute bottom-60 right-10 text-blue-200 font-mono text-sm opacity-60"
           style={{ transform: `translateY(${-scrollY * 0.1}px)` }}
         >
           H = ½(X + Z)
@@ -44,31 +44,31 @@ const QiskitFallFest = () => {
 
         {/* Moving Mathematical Numbers */}
         <div 
-          className="absolute top-32 left-1/4 text-purple-300 font-mono text-2xl opacity-20 animate-pulse"
+          className="absolute top-32 left-1/4 text-purple-200 font-mono text-2xl opacity-50 animate-pulse"
           style={{ transform: `translateY(${scrollY * 0.05}px) rotate(${scrollY * 0.02}deg)` }}
         >
           3.14159
         </div>
         <div 
-          className="absolute top-80 right-1/4 text-cyan-400 font-mono text-xl opacity-25"
+          className="absolute top-80 right-1/4 text-cyan-300 font-mono text-xl opacity-55"
           style={{ transform: `translateX(${-scrollY * 0.08}px)` }}
         >
           1.618
         </div>
         <div 
-          className="absolute bottom-32 left-10 text-blue-400 font-mono text-lg opacity-20"
+          className="absolute bottom-32 left-10 text-blue-300 font-mono text-lg opacity-50"
           style={{ transform: `translateY(${-scrollY * 0.12}px)` }}
         >
           2.718
         </div>
         <div 
-          className="absolute top-96 left-3/4 text-indigo-300 font-mono text-sm opacity-30"
+          className="absolute top-96 left-3/4 text-indigo-200 font-mono text-sm opacity-60"
           style={{ transform: `translateX(${scrollY * 0.06}px) translateY(${scrollY * 0.04}px)` }}
         >
           1.414
         </div>
         <div 
-          className="absolute bottom-80 right-1/3 text-teal-300 font-mono text-xl opacity-25 animate-bounce"
+          className="absolute bottom-80 right-1/3 text-teal-200 font-mono text-xl opacity-55 animate-bounce"
           style={{ animationDuration: '4s' }}
         >
           0.577
@@ -76,56 +76,56 @@ const QiskitFallFest = () => {
 
         {/* Moving Coding Words */}
         <div 
-          className="absolute top-44 left-1/6 text-green-400 font-mono text-sm opacity-20"
+          className="absolute top-44 left-1/6 text-green-300 font-mono text-sm opacity-50"
           style={{ transform: `translateX(${scrollY * 0.07}px)` }}
         >
           def quantum_gate():
         </div>
         <div 
-          className="absolute top-72 right-1/6 text-yellow-400 font-mono text-xs opacity-25"
+          className="absolute top-72 right-1/6 text-yellow-300 font-mono text-xs opacity-55"
           style={{ transform: `translateY(${scrollY * 0.09}px)` }}
         >
           import numpy as np
         </div>
         <div 
-          className="absolute bottom-44 left-1/3 text-pink-300 font-mono text-sm opacity-20"
+          className="absolute bottom-44 left-1/3 text-pink-200 font-mono text-sm opacity-50"
           style={{ transform: `translateX(${-scrollY * 0.05}px)` }}
         >
           circuit.measure()
         </div>
         <div 
-          className="absolute top-1/2 left-20 text-orange-300 font-mono text-xs opacity-30"
+          className="absolute top-1/2 left-20 text-orange-200 font-mono text-xs opacity-60"
           style={{ transform: `translateY(${scrollY * 0.11}px) rotate(${scrollY * 0.01}deg)` }}
         >
           qiskit.execute()
         </div>
         <div 
-          className="absolute bottom-1/3 right-20 text-lime-300 font-mono text-sm opacity-25"
+          className="absolute bottom-1/3 right-20 text-lime-200 font-mono text-sm opacity-55"
           style={{ transform: `translateY(${-scrollY * 0.08}px)` }}
         >
           backend.run()
         </div>
         <div 
-          className="absolute top-1/3 right-1/2 text-violet-300 font-mono text-xs opacity-20"
+          className="absolute top-1/3 right-1/2 text-violet-200 font-mono text-xs opacity-50"
           style={{ transform: `translateX(${scrollY * 0.04}px)` }}
         >
           for i in range(n):
         </div>
         <div 
-          className="absolute bottom-1/4 left-1/2 text-rose-300 font-mono text-sm opacity-25"
+          className="absolute bottom-1/4 left-1/2 text-rose-200 font-mono text-sm opacity-55"
           style={{ transform: `translateY(${scrollY * 0.06}px)` }}
         >
           matrix @ vector
         </div>
         <div 
-          className="absolute top-1/4 left-3/4 text-sky-300 font-mono text-xs opacity-30 animate-pulse"
+          className="absolute top-1/4 left-3/4 text-sky-200 font-mono text-xs opacity-60 animate-pulse"
           style={{ animationDuration: '3s' }}
         >
           quantum_state
         </div>
         
         {/* Circuit-like Lines */}
-        <svg className="absolute inset-0 w-full h-full opacity-10">
+        <svg className="absolute inset-0 w-full h-full opacity-25">
           <defs>
             <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#3B82F6" />
