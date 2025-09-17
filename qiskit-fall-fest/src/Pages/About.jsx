@@ -54,7 +54,6 @@ const About = () => {
         </div>
 
         <div className="mb-20 max-w-4xl mx-auto bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
-          <img src="/images/quantumplators.png" alt="Quantumplators" className="mx-auto mb-6 w-40 h-auto" />
           <h2 className="text-4xl font-bold mb-4 text-cyan-300">Quantumplators</h2>
           <p className="text-gray-300 text-lg leading-relaxed">
             Introducing Quantumplators, the pioneering Quantum Computing Special Team at VIT Chennai.
@@ -66,7 +65,6 @@ const About = () => {
           </p>
         </div>
         <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
-          <img src="/images/qiskit.png" alt="IBM Qiskit" className="mx-auto mb-6 w-40 h-auto" />
           <h2 className="text-4xl font-bold mb-4 text-blue-300">IBM Qiskit</h2>
           <p className="text-gray-300 text-lg leading-relaxed">
             Qiskit is an open-source framework developed by IBM for quantum computing. It allows users to

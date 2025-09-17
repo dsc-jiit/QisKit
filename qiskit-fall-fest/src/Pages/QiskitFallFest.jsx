@@ -193,13 +193,13 @@ const QiskitFallFest = () => {
               <img 
                 src={dscLogo} 
                 alt="DSC JIIT" 
-                className="w-10 h-10" 
+                className="w-14 h-14" 
               />
               {/* QisKit logo on the RIGHT */}
               <img 
                 src={badgeLogo} 
                 alt="Qiskit Fall Fest 2025" 
-                className="w-10 h-10" 
+                className="w-11 h-11" 
               />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Qiskit Fall Fest
