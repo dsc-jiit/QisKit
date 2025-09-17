@@ -10,6 +10,8 @@ import badgeLogo from '../assets/Badge_02.png';
 import themeImage from '../assets/Theme.png';
 import confetti from 'canvas-confetti';
 import catImage from '../assets/Cat_01.png';
+import dscLogo from '../assets/dsc.png';
+
 
 const QiskitFallFest = () => {
   const [showCatBubble, setShowCatBubble] = useState(true);
@@ -192,6 +194,12 @@ const QiskitFallFest = () => {
                 alt="Qiskit Fall Fest 2025" 
                 className="w-10 h-10" 
               />
+              {/* Add JIIT logo */}
+              <img 
+                src={dscLogo} 
+                alt="DSC" 
+                className="w-12 h-12 " 
+              />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Qiskit Fall Fest
               </span>
@@ -261,7 +269,7 @@ const QiskitFallFest = () => {
               </a>
               <a href="#" className="flex items-center justify-center text-gray-200 hover:text-cyan-400">
                 <MapPin className="mr-2" size={20} />
-                Virtual Event
+                In-person Event
               </a>
             </div>
             <p className="text-gray-300">&copy; 2025 IBM Qiskit Fall Fest. All rights reserved.</p>
