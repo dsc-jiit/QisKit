@@ -26,19 +26,21 @@ const About = () => {
       id="about"
       className="relative py-24 overflow-hidden"
     >
-
-      <div className="container mx-auto px-6 relative z-10 text-center">
+      <div className="container mx-auto px-6 relative z-10">
         <div className="mb-20 bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
-          <h2 className="text-5xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent tracking-tight">
-            About Qiskit Fall Fest
+          <h2 className="text-4xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent tracking-tight text-left">
+            Why join?
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Join the global quantum computing community for an immersive experience in quantum programming, 
-            algorithms, and the future of computing technology.
-          </p>
+          <ul className="text-xl text-gray-300 max-w-3xl leading-relaxed list-disc list-outside text-left">
+            <li>Hands-On Learning: Build, simulate, and run your own quantum circuits using Qiskit.</li>
+            <li>Real Quantum Machines: Experiment with IBM’s actual quantum computers.</li>
+            <li>Fun Challenges & Workshops: Solve quantum puzzles, explore algorithms, and test your skills.</li>
+            <li>For Everyone: No prior experience needed—perfect for beginners and enthusiasts alike.</li>
+            <li>Connect & Collaborate: Meet fellow quantum learners from around the world.</li>
+          </ul>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-10 mb-24 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-10 mb-24 max-w-6xl">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -47,30 +49,29 @@ const About = () => {
               <div className="mb-6 transition-transform duration-300 group-hover:scale-110">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-semibold mb-4">{feature.title}</h3>
-              <p className="text-gray-300 leading-relaxed">{feature.description}</p>
+              <h3 className="text-2xl font-semibold mb-4 text-left">{feature.title}</h3>
+              <p className="text-gray-300 leading-relaxed text-left">{feature.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="mb-20 max-w-4xl mx-auto bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
-          <h2 className="text-4xl font-bold mb-4 text-cyan-300">Quantumplators</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
-            Introducing Quantumplators, the pioneering Quantum Computing Special Team at VIT Chennai.
-            Quantumplators is a dynamic force driven by passionate college students, charting new territories
-            in the ever-expanding world of quantum computing. Our mission is to propel VIT Chennai into the
-            quantum era by fostering quantum literacy, preparing for cutting-edge quantum hackathons,
-            and providing ample research opportunities. With our dedicated student leaders at the helm,
-            we aim to lead the charge in quantum exploration.
-          </p>
+        <div className="mb-20 max-w-4xl bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
+          <h2 className="text-4xl font-bold mb-4 text-cyan-300 text-left">Qiskit Fall Fest!</h2>
+          <ul className="text-gray-300 text-lg leading-relaxed list-disc list-outside text-left">
+            <li>Step into the fascinating world of quantum computing with Qiskit, IBM’s open-source Python toolkit.</li>
+            <li>Learn, build, and run quantum circuits on simulators and real quantum computers.</li>
+            <li>Have fun and explore cutting-edge technology.</li>
+            <li>Perfect for beginners or anyone curious about quantum computing.</li>
+            <li>Experiment, innovate, and be part of the quantum revolution.</li>
+          </ul>
         </div>
-        <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
-          <h2 className="text-4xl font-bold mb-4 text-blue-300">IBM Qiskit</h2>
-          <p className="text-gray-300 text-lg leading-relaxed">
-            Qiskit is an open-source framework developed by IBM for quantum computing. It allows users to
-            create and run quantum programs on both simulators and real quantum hardware. Qiskit includes
-            tools for building quantum circuits, simulating quantum systems, and developing quantum algorithms.
-          </p>
+        <div className="max-w-4xl bg-white/10 backdrop-blur-xl p-10 rounded-3xl border border-white/20 shadow-xl">
+          <h2 className="text-4xl font-bold mb-4 text-blue-300 text-left">IBM Qiskit</h2>
+          <ul className="text-gray-300 text-lg leading-relaxed list-disc list-outside text-left">
+            <li>IBM’s open-source Python toolkit for quantum computing.</li>
+            <li>Create, simulate, and run quantum circuits on simulators or real quantum machines.</li>
+            <li>Makes quantum learning and experimentation easy and accessible.</li>
+          </ul>
         </div>
       </div>
     </section>
