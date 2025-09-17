@@ -1,0 +1,7 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  background: #121212;  /* Dark background */
+  color: rgb(172, 122, 122);         /* Light text color */
+  font-family: Arial, sans-serif;
+}
