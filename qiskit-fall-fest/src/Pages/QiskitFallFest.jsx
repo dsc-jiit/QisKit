@@ -189,16 +189,17 @@ const QiskitFallFest = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
+              {/* DSC/JIIT logo on the LEFT */}
+              <img 
+                src={dscLogo} 
+                alt="DSC JIIT" 
+                className="w-10 h-10" 
+              />
+              {/* QisKit logo on the RIGHT */}
               <img 
                 src={badgeLogo} 
                 alt="Qiskit Fall Fest 2025" 
                 className="w-10 h-10" 
-              />
-              {/* Add JIIT logo */}
-              <img 
-                src={dscLogo} 
-                alt="DSC" 
-                className="w-12 h-12 " 
               />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Qiskit Fall Fest
