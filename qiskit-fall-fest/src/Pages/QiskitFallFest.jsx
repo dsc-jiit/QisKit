@@ -9,9 +9,17 @@ import backgroundImage from '../assets/maths.png';
 import badgeLogo from '../assets/Badge_02.png';
 import themeImage from '../assets/Theme.png';
 import confetti from 'canvas-confetti';
+import catImage from '../assets/Cat_01.png';
 
 const QiskitFallFest = () => {
-  const [showCatBubble, setShowCatBubble] = useState(false);
+  const [showCatBubble, setShowCatBubble] = useState(true);
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setShowCatBubble(false);
+      }, 10000); 
+
+      return () => clearTimeout(timer);
+    }, []);
 
   const handleBubbleClick = () => {
     setShowCatBubble(true);
@@ -174,14 +182,16 @@ const QiskitFallFest = () => {
         </svg>
       </div>
 
-      {/*navigation*/}
+      {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Q</span>
-              </div>
+              <img 
+                src={badgeLogo} 
+                alt="Qiskit Fall Fest 2025" 
+                className="w-10 h-10" 
+              />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Qiskit Fall Fest
               </span>
@@ -201,10 +211,32 @@ const QiskitFallFest = () => {
       <Workshops />
       <Register />
       {showCatBubble && (
-        <div className="fixed bottom-28 right-6 bg-white/10 backdrop-blur-md border border-cyan-300 rounded-2xl px-6 py-4 text-center text-white shadow-xl animate-fadeIn z-50">
-          <div className="text-5xl mb-2">🐱</div>
-          <div className="text-lg font-semibold">
-            Schrödinger's Cat Turns 100 🎉
+        <div className="fixed bottom-28 right-6 z-50 animate-fadeIn">
+
+          <div className="relative bg-white/20 backdrop-blur-xl border-2 border-blue-300/70 rounded-full p-6 w-60 h-60 flex flex-col items-center justify-center shadow-2xl shadow-cyan-400/20 animate-float">
+            <div className="absolute -bottom-4 right-8 w-8 h-8 bg-white/20 backdrop-blur-xl border-r-2 border-b-2 border-blue-300/60 transform rotate-45"></div>
+            <div className="relative mb-3">
+              <div className="animate-bounce" style={{ animationDuration: '2s' }}>
+                <img 
+                  src={catImage} 
+                  alt="Schrödinger's Cat" 
+                  className="w-16 h-16 object-contain rounded-full border-2 border-cyan-300/50 shadow-lg shadow-cyan-400/30"
+                />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-cyan-400/20 animate-pulse -z-10"></div>
+            </div>
+            <div className="text-center px-2">
+              <div className="text-lg font-semibold text-white bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+                Schrödinger's Cat
+              </div>
+              <div className="text-sm  mt-1">
+                Turns 100 🎉
+              </div>
+            </div>
+            
+            <div className="absolute top-2 left-4 text-cyan-400/60 animate-pulse">⚛️</div>
+            <div className="absolute bottom-4 right-2 text-purple-400/60 animate-ping" style={{ animationDuration: '3s' }}>🔬</div>
+            <div className="absolute top-6 right-6 text-blue-400/50 animate-spin" style={{ animationDuration: '8s' }}>🌌</div>
           </div>
         </div>
       )}
@@ -216,7 +248,7 @@ const QiskitFallFest = () => {
               <img 
                 src={badgeLogo} 
                 alt="Qiskit Fall Fest 2025" 
-                className="w-16 h-16 drop-shadow-[0_0_15px_rgba(34,211,238,0.7)]" 
+                className="w-16 h-16 drop-shadow-[0_0_15px_rgba(30,200,238,0.4)]" 
               />
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
                 Qiskit Fall Fest 2025

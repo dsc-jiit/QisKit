@@ -16,7 +16,7 @@ const Home = () => {
             <img
               src={QiskitImage}
               alt="Qiskit Logo"
-              className="h-[260px] w-auto object-contain drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]"
+              className="h-[260px] w-auto object-contain drop-shadow-[0_0_20px_rgba(80,211,220,0.5)]"
             />
           </div>
 
@@ -29,12 +29,12 @@ const Home = () => {
             </h1>
 
             <h2
-              className="text-lg md:text-xl text-cyan-300 font-medium tracking-wide"
+              className="text-lg md:text-xl text-blue-400 font-medium tracking-wide"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
-              Celebrating a Century of Quantum ⚛️
+              Celebrating a Century of Quantum 
             </h2>
-            <div className="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mx-auto lg:mx-0"></div>
+            <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full mx-auto lg:mx-0"></div>
             <p
               className="text-base md:text-lg text-gray-300 max-w-md mx-auto lg:mx-0 leading-relaxed"
               style={{ fontFamily: "'Inter', sans-serif" }}
