@@ -10,8 +10,9 @@ const Home = () => {
     >
       <div className="container mx-auto px-6">
         <div
-          className="w-full backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-10 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-12 transition-all duration-300"
+          className="relative z-10 w-full backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-10 md:p-16 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-12 transition-all duration-300"
         >
+          {/* Left side image */}
           <div className="lg:w-2/5 flex justify-center lg:justify-start">
             <img
               src={QiskitImage}
@@ -20,6 +21,7 @@ const Home = () => {
             />
           </div>
 
+          {/* Right side text */}
           <div className="lg:w-3/5 text-center lg:text-left space-y-5">
             <h1
               className="text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight"
@@ -32,7 +34,7 @@ const Home = () => {
               className="text-lg md:text-xl text-blue-400 font-medium tracking-wide"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
-              Celebrating a Century of Quantum 
+              Celebrating a Century of Quantum
             </h2>
             <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-blue-500 rounded-full mx-auto lg:mx-0"></div>
             <p
@@ -41,8 +43,18 @@ const Home = () => {
             >
               Join us as we honor 100 years of quantum mechanics with cutting-edge workshops, expert talks, and hands-on quantum learning experiences.
             </p>
+
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
               <button
+                type="button"
+                onClick={() =>
+                  window.open(
+                    "https://forms.gle/6BQaanNVWippBydn6",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
                 className="px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-medium text-white hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
@@ -58,24 +70,28 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+
+      {/* Chevron down */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <ChevronDown className="text-cyan-400" size={28} />
       </div>
+
+      {/* Floating background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
-          className="absolute top-1/4 left-16 w-12 h-12 border border-cyan-400/40 rounded-lg flex items-center justify-center animate-float"
+          className="absolute top-1/4 left-16 w-12 h-12 border border-cyan-400/40 rounded-lg flex items-center justify-center animate-float pointer-events-none"
           style={{ animationDelay: "0s" }}
         >
           <span className="text-cyan-400 font-semibold">H</span>
         </div>
         <div
-          className="absolute top-1/3 right-28 w-12 h-12 border border-purple-400/40 rounded-lg flex items-center justify-center animate-float"
+          className="absolute top-1/3 right-28 w-12 h-12 border border-purple-400/40 rounded-lg flex items-center justify-center animate-float pointer-events-none"
           style={{ animationDelay: "1s" }}
         >
           <span className="text-purple-400 font-semibold">X</span>
         </div>
         <div
-          className="absolute bottom-1/4 left-1/3 w-12 h-12 border border-blue-400/40 rounded-lg flex items-center justify-center animate-float"
+          className="absolute bottom-1/4 left-1/3 w-12 h-12 border border-blue-400/40 rounded-lg flex items-center justify-center animate-float pointer-events-none"
           style={{ animationDelay: "2s" }}
         >
           <span className="text-blue-400 font-semibold">Z</span>

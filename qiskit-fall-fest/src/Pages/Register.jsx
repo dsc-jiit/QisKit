@@ -1,10 +1,19 @@
 import React from 'react';
 import { Award, Zap, Users } from 'lucide-react';
 
+
 const Register = () => {
+  const handleRegisterClick = () => {
+    console.log("Register button clicked");
+    window.open(
+      "https://forms.gle/6BQaanNVWippBydn6",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
   return (
     <section id="register" className="py-20">
-      <div className="container mx-auto px-6 text-center">
+      <div className=" z-10 container mx-auto px-6 text-center">
         <div className="bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/20 mb-12">
           <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Ready to Join?
@@ -14,7 +23,7 @@ const Register = () => {
           </p>
         </div>
         
-        <div className="max-w-md mx-auto bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/20">
+        <div className="max-w-md mx-auto bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/20 relative">
           <div className="mb-6">
             <div className="text-3xl font-bold text-cyan-400 mb-2">Free</div>
             <p className="text-gray-200">Open to all students and professionals</p>
@@ -35,9 +44,14 @@ const Register = () => {
             </li>
           </ul>
           
-          <button className="w-full px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-1">
-            Register Now
-          </button>
+          <button
+  type="button"
+  onClick={handleRegisterClick}
+  className="w-full z-100 px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 transform hover:-translate-y-1"
+>
+  Register
+</button>
+
         </div>
       </div>
     </section>
